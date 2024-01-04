@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <script src="index.js"></script>
+    <title>NormiCalculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="nav">
+            <button id="lightDark" type="button" onclick="lightDark()"><i class="fa-solid fa-moon"></i></button>
+            <a href="#"><img class="logo" src="images/NORMI_logo.jpg" alt="logo"></a>
+        </div>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <p id="ans">0</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button class="color2" type="button" onclick="ac()">AC</button></td>
+                <td colspan="2"><button class="color2" type="button" onclick="back()">&larr;</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="seven()">7</button></td>
+                <td><button type="button" onclick="eight()">8</button></td>
+                <td><button type="button" onclick="nine()">9</button></td>
+                <td><button class="color2" type="button" onclick="divide()">&div;</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="four()">4</button></td>
+                <td><button type="button" onclick="five()">5</button></td>
+                <td><button type="button" onclick="six()">6</button></td>
+                <td><button class="color2" type="button" onclick="multiply()">&times;</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="one()">1</button></td>
+                <td><button type="button" onclick="two()">2</button></td>
+                <td><button type="button" onclick="three()">3</button></td>
+                <td><button class="color2" type="button" onclick="minus()">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="zero()">0</button></td>
+                <td><button class="color2" type="button" onclick="dot()">.</button></td>
+                <td><button class="color2" type="button" onclick="equal()">=</button></td>
+                <td><button class="color2" type="button" onclick="add()">+</button></td>
+            </tr>
+        </table>
+        <footer>Power by Normi, 2024</footer>
+    </div>
+</body>
+</html>
