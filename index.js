@@ -20,7 +20,10 @@ function back() {
 }
 
 function zero() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '0');
     }
@@ -30,7 +33,10 @@ function zero() {
 }
 
 function one() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '1');
     }
@@ -41,7 +47,10 @@ function one() {
 }
 
 function two() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '2');
     }
@@ -52,7 +61,10 @@ function two() {
 }
 
 function three() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '3');
     }
@@ -63,7 +75,10 @@ function three() {
 }
 
 function four() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '4');
     }
@@ -74,7 +89,10 @@ function four() {
 }
 
 function five() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '5');
     }
@@ -85,7 +103,10 @@ function five() {
 }
 
 function six() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '6');
     }
@@ -96,7 +117,10 @@ function six() {
 }
 
 function seven() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '7');
     }
@@ -107,7 +131,10 @@ function seven() {
 }
 
 function eight() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '8');
     }
@@ -118,7 +145,10 @@ function eight() {
 }
 
 function nine() {
-    var currAns = String(Number(document.getElementById("ans").innerHTML));
+    var currAns = document.getElementById("ans").innerHTML;
+    if (currAns.slice(-1) != '.') {
+        currAns = String(Number(document.getElementById("ans").innerHTML));
+    }
     if (disFlag) {
         document.getElementById("ans").innerHTML = displayLongNumber(currAns + '9');
     }
@@ -183,8 +213,8 @@ function equal() {
 }
 
 function displayLongNumber(numString) {
-    if (numString.length > 15) {
-        numString = String(Number(numString).toExponential(8));
+    if (numString.length > 10) {
+        numString = String(Number(numString).toExponential(10));
     }
     return numString;
 }
